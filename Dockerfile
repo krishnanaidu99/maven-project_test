@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the pom.xml and source code to the container
 COPY pom.xml .
-COPY src ./webapp/src
+COPY src ./server/src
 
 # Build the application with Maven
 RUN apt-get update && apt-get install -y maven
