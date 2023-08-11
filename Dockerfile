@@ -13,4 +13,4 @@ RUN apt-get update && apt-get install -y maven
 RUN mvn package
 
 # Set the entry point
-ENTRYPOINT ["java", "-jar", "target/your-application.jar"]
+ENTRYPOINT ["java", "-jar", "server/target/server.jar"]
